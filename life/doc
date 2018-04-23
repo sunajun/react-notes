@@ -1,0 +1,31 @@
+init
+    defaultProps(share共有的) -->run getDefaultProps(){return {group:123}} -->React.createClass() 只调用一次
+    readyonly 只读
+    state --> getInitialState(){return {}}  /ES6 constructor(){this.state = {}}
+          --> new Item() 多少个实例运行多少次
+    private write 内部运行可写的
+mount
+    componentwillMount 只调用一次  在这里可以对state进行修改
+    render
+    componentdidMount 只调用一次
+        dom 加载完成后才能操作dom
+        other framework
+        ajax server data
+
+update
+    will
+    did
+
+unmount
+    componentWillUnmount
+
+
+
+
+
+
+
+
+
+
+
