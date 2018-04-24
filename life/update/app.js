@@ -69,7 +69,6 @@ Item.defaultProps = {
 function render(bool){
   ReactDOM.render(
     <div>
-      <Item/>
       {bool ? <Item/> :''}
     </div>,
     document.getElementById('test')
@@ -87,5 +86,8 @@ function render(bool){
 render(true)
 
 document.getElementById('clear').onclick = function () {
-  render()
+  render(false)
+};
+document.getElementById('new').onclick = function () {
+  render(true)
 };
