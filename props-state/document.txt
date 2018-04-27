@@ -1,0 +1,6 @@
+1、尽量用props，no state无状态化 <Item data={}/>
+2、最小化state
+3、props vs state相配合的数据放在render里面
+    render(){
+    var result = state.len * props.size
+    }
